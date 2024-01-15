@@ -2,7 +2,6 @@ import * as fs from "fs";
 import * as path from "path";
 import { Address, contractAddress } from "@ton/core";
 import { TonClient4 } from "@ton/ton";
-import { SampleTactContract } from "./output/sample_SampleTactContract";
 import { ReceiversContract } from "./output/sample_ReceiversContract";
 import { prepareTactDeployment } from "@tact-lang/deployer";
 
