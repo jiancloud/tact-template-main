@@ -3,9 +3,14 @@
   "scripts": {
     "build": "tact --config ./tact.config.json",
     "test": "jest",
-    "deploy": "ts-node ./sources/contract.deploy.ts",
-    "read": "ts-node ./sources/contract.read.ts",
-    "write": "ts-node ./sources/contract.write.ts"
+    "deploy": "ts-node ./sources/receivers.deploy.ts",
+    "read": "ts-node ./sources/receivers.read.ts",
+    "increment": "ts-node ./sources/receivers.increment.ts",
+    "decrement": "ts-node ./sources/receivers.decrement.ts",
+    "xdd": "ts-node ./sources/receivers.add.ts",
+    "subtract": "ts-node ./sources/receivers.subtract.ts",
+    "multiply": "ts-node ./sources/receivers.multiply.ts",
+    "divide": "ts-node ./sources/receivers.divide.ts"
   },
   "dependencies": {
     "@tact-lang/compiler": "^1.1.5",

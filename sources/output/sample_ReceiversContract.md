@@ -1,9 +1,9 @@
 # TACT Compilation Report
-Contract: SampleTactContract
-BOC Size: 1002 bytes
+Contract: ReceiversContract
+BOC Size: 943 bytes
 
 # Types
-Total Types: 8
+Total Types: 10
 
 ## StateInit
 TLB: `_ code:^cell data:^cell = StateInit`
@@ -37,12 +37,18 @@ Signature: `Add{amount:uint32}`
 TLB: `subtract#5c8e8db9 amount:uint32 = Subtract`
 Signature: `Subtract{amount:uint32}`
 
+## Multiply
+TLB: `multiply#82491bc4 amount:uint32 = Multiply`
+Signature: `Multiply{amount:uint32}`
+
+## Divide
+TLB: `divide#7ca4745f amount:uint32 = Divide`
+Signature: `Divide{amount:uint32}`
+
 # Get Methods
-Total Get Methods: 2
+Total Get Methods: 1
 
-## counter
-
-## pointer
+## value
 
 # Error Codes
 2: Stack undeflow
@@ -69,4 +75,4 @@ Total Get Methods: 2
 135: Code of a contract was not found
 136: Invalid address
 137: Masterchain support is not enabled for this contract
-4429: Invalid sender
+58800: The dividend must be greater than 0
